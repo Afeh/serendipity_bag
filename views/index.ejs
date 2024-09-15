@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/main.css">
+	<title>Serendipity Bag</title>
+</head>
+<body>
+	<h1>Serendipity <span class="bag-box">Bag</span></h1>
+
+	<div class="input-boxes">
+		<form action="/submit" method="POST">
+			<input class="title-box" type="text" name="title" placeholder="Enter Title here">
+			<textarea class="blog-box" name="blogText" placeholder="Share your peace or peeve..."></textarea>
+			<input type="submit" class="stash" value="Stash">
+		</form>
+	</div>
+
+
+	<div class="treasure-box">
+		<h2>Treasure <span class="trove">Trove</span></h2>
+	
+		
+			<div class="blog-post">
+				<div class="text-container">
+					<% if (locals.blogTitle && locals.blogText) { %>
+						<p class="blog-title"><%= blogTitle %></p>
+						<br class="break">
+						<p class="blog-text"><%= blogText %></p>
+					<% } else { %>
+						<p class="blog-title">Title here</p>
+						<br class="break">
+						<p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<% } %>
+				</div>
+			</div>
+		
+			<div class="blog-post">
+				<div class="text-container">
+					<p class="blog-title">Title here</p>
+					<br class="break">
+					<p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		
+
+		<div class="blog-post">
+			<div class="text-container">
+				<p class="blog-title">Title here</p>
+				<br class="break">
+				<p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+	<footer><p>Copyright <%= year %> Afebu</p></footer>
+</body>
+</html>

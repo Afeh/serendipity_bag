@@ -1,0 +1,154 @@
+h1 {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	text-align: center;
+	font-size: 3.625rem;
+}
+
+body {
+	background: #222;
+	color: #E673B8;
+	font-size: 1.325rem;
+	font-family: "SUSE", sans-serif;
+	font-weight: 400;
+	/* font-optical-sizing: auto; */
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.bag-box {
+	background-color: #8E73E6;
+	color: #222;
+	padding: 4px;
+	border-radius: 7px;
+}
+
+.input-boxes {
+	max-width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 9%;
+}
+
+.title-box {
+	margin-bottom: 15px;
+	font-size: 1rem;
+}
+
+.blog-box {
+	margin-bottom: 8px;
+	height: 200px;
+	vertical-align: top;
+	resize: vertical;
+
+}
+
+.stash {
+	appearance: none;
+	border: 0;
+	font-size: 0.9rem;
+	background: #8E73E6;
+	padding: 1rem;
+	color: #222;
+	cursor: pointer;
+	border-radius: 7px;
+	float: right;
+	clear: left;
+	position: relative;
+	left: 23px;
+}
+
+.title-box, .blog-box {
+	width: 100%;
+	padding: 10px;
+	background-color: #222;
+	color: #8E73E6;
+	border: 2px solid #E673B8;
+	border-radius: 5px;
+	
+}
+
+
+h2 {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	text-align: center;
+	font-size: 2.625rem;
+}
+
+.trove {
+	text-decoration: underline wavy;
+	text-decoration-color: #8E73E6;
+}
+
+.treasure-box {
+	margin: 120px auto;
+	width: 70%;
+}
+
+.blog-text {
+	margin-top: 0;
+	font-size: 1.2rem;
+}
+
+.blog-title {
+	margin-bottom: 7px;
+	font-size: 1.6rem;
+
+}
+
+.blog-post {
+	margin-bottom: 50px;
+	text-align: justify;
+	/* margin: auto 5%; */
+	border: 2px solid #E673B8;
+	border-radius: 5px;
+}
+
+.text-container {
+	margin: 5%;
+}
+
+footer {
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+
+@media (min-width: 319px) and (max-width: 480px){
+	h1 {
+		font-size: 2.225rem;
+	}
+
+	body {
+		font-size: 0.125rem;
+	}
+
+	.treasure-box {
+		margin: 60px auto;
+		width: 95%;
+	}
+
+	h2 {
+		font-size: 1.725rem;
+	}
+
+	.blog-title {
+		font-size: 1.3rem;
+	}
+
+	.blog-text {
+		font-size: 1rem;
+	}
+	
+}
